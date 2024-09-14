@@ -24,10 +24,6 @@ Assumptions:
 - when `tag` field is empty, we assign `untagged` as its tag.
 - input is structured as `port,protocol,tag`.
 
-Tests:
-
-- Test is located in file `log-records-test.go`
-
 
 ### Run the program
 
@@ -44,5 +40,13 @@ cd flow-log-records
 ```
 go build ./
 go run flow-log-records <lookup.txt>
+```
+
+### Tests
+
+Test is located in file `log-records-test.go`. To run unit tests:
+
+```
+go test -v
 ```
 
